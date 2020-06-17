@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="estilos.css" />
+  <title>Piedra, papel o tijera</title>
+
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <h1>¡Piedra, papel o tijera!</h1>
+    <section class="puntajes">
+        <div class="miPuntaje">
+            <p class="nombre">Yo</p>
+            <p class="puntos">0</p>
+        </div>
+        <div class="pcPuntaje">
+            <p class="nombre">Computadora</p>
+            <p class="puntos">0</p>
+        </div>
+    </section>
+
+    <section class="resultado">
+        <p id="resultado">🙂</p>
+    </section>
+
+    <section class="manos">
+        <div id="manoUsuario"><img src="img/mano1.png" alt="mano 1"></div>
+        <div id="manoPc"><img src="img/mano1.png" alt="mano 2"></div>
+    </section>
+
+    <button id="empezar" class="active">Empezar</button>
+
+    <section id="opciones">
+        <p>Elegí una opción:</p>
+        <ul>
+            <li>Piedra<img src="img/piedra.png" alt="piedra" id="piedra"></li>
+            <li>Papel<img src="img/papel.png" alt="papel" id="papel"></li>
+            <li>Tijera<img src="img/tijera.png" alt="tijera" id="tijera"></li>
+        </ul>
+    </section>
+
+    <div class="overlay">
+      <div class="popup">
+        <h3>Jugá Piedra, Papel o Tijera, ¡gana el mejor de 3!</h3>
+        <input type="text" id="inputUsuario" placeholder="Ingresá tu nombre:">
+        <button type="submit" id="btnAceptar">Aceptar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
